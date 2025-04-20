@@ -21,7 +21,7 @@ public class EncryptController {
         try {
             // Convert to JSON string
             String jsonString = objectMapper.writeValueAsString(request);
-
+           System.out.println("Incoming request: "+jsonString);
             // Encrypt it
             String encrypted = CryptoUtil.encrypt(jsonString);
 
